@@ -1,0 +1,160 @@
+/* Angebotsanfrage – Frontend-Styles */
+
+/* Angebot-anfragen-Button */
+.aga-add-to-quote {
+	background: #2271b1;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	margin-top: 8px;
+	display: inline-block;
+}
+
+.aga-add-to-quote:hover,
+.aga-add-to-quote:focus {
+	background: #135e96;
+	color: #fff;
+}
+
+.aga-add-to-quote:disabled {
+	opacity: 0.6;
+	cursor: default;
+}
+
+/* Preise ausblenden (wenn hide_price aktiv) */
+.aga-hide-price .price,
+.aga-hide-price .woocommerce-Price-amount {
+	display: none !important;
+}
+
+/* Angebotsliste Container */
+.aga-quote-wrap {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Notices */
+.aga-notice {
+	padding: 12px 16px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.aga-notice-success {
+	background: #edfaef;
+	border: 1px solid #00a32a;
+	color: #1a4731;
+}
+
+.aga-notice-error {
+	background: #fce8e8;
+	border: 1px solid #d63638;
+	color: #5c1d1e;
+}
+
+/* Angebotsliste Abschnitt */
+.aga-quote-list {
+	margin-bottom: 32px;
+}
+
+.aga-quote-list h3 {
+	margin-top: 0;
+}
+
+.aga-empty {
+	color: #646970;
+	font-style: italic;
+}
+
+/* Tabelle */
+.aga-list-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 12px;
+}
+
+.aga-list-table th,
+.aga-list-table td {
+	padding: 10px 12px;
+	text-align: left;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.aga-list-table th {
+	background: #f6f7f7;
+	font-weight: 600;
+}
+
+/* Entfernen-Button */
+.aga-remove-from-quote {
+	background: none;
+	border: none;
+	color: #d63638;
+	font-size: 18px;
+	line-height: 1;
+	cursor: pointer;
+	padding: 2px 6px;
+}
+
+.aga-remove-from-quote:hover {
+	color: #8a1f1f;
+}
+
+/* Formular */
+.aga-quote-form h3 {
+	margin-top: 0;
+}
+
+.aga-form .aga-field {
+	margin-bottom: 16px;
+}
+
+.aga-form label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.aga-form input[type="text"],
+.aga-form input[type="email"],
+.aga-form input[type="tel"],
+.aga-form textarea {
+	width: 100%;
+	max-width: 480px;
+	padding: 8px 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 3px;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.aga-form textarea {
+	resize: vertical;
+}
+
+.aga-required {
+	color: #d63638;
+	margin-left: 2px;
+}
+
+.aga-required-note {
+	font-size: 12px;
+	color: #646970;
+	margin-bottom: 16px;
+}
+
+.aga-submit {
+	background: #2271b1;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.aga-submit:hover,
+.aga-submit:focus {
+	background: #135e96;
+	color: #fff;
+}

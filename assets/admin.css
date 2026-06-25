@@ -1,0 +1,40 @@
+/* Angebotsanfrage – Admin-Styles */
+
+.aga-wrap {
+	max-width: 900px;
+}
+
+/* Pro-Teaser */
+.aga-pro-teaser {
+	background: #f6f7f7;
+	border: 1px dashed #a7aaad;
+}
+
+.aga-pro-features {
+	list-style: none;
+	padding: 0;
+	margin: 12px 0;
+}
+
+.aga-pro-features li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 0;
+	border-bottom: 1px solid #dcdcde;
+	color: #646970;
+}
+
+.aga-pro-features li:last-child {
+	border-bottom: none;
+}
+
+.aga-pro-features .dashicons {
+	color: #a7aaad;
+}
+
+/* Metabox */
+.aga-meta-box h3 {
+	font-size: 14px;
+	margin-top: 0;
+}
