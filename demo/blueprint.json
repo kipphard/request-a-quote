@@ -13,13 +13,13 @@
       "step": "installPlugin",
       "pluginData": {
         "resource": "url",
-        "url": "https://github.com/kipphard/angebotsanfrage/releases/download/v0.1.0/angebotsanfrage-0.1.0.zip"
+        "url": "https://github.com/kipphard/request-a-quote/releases/download/v0.2.0/request-a-quote-0.2.0.zip"
       },
       "options": { "activate": true }
     },
     {
       "step": "runPHP",
-      "code": "<?php require_once '/wordpress/wp-load.php';\nif ( class_exists( 'WC_Product_Simple' ) ) {\n  $names = array( 'Profi-Werkbank XL', 'Industrie-Schwerlastregal 200 cm', 'Großgebinde Industriereiniger 25 L' );\n  foreach ( $names as $n ) {\n    $p = new WC_Product_Simple();\n    $p->set_name( $n );\n    $p->set_status( 'publish' );\n    $p->set_catalog_visibility( 'visible' );\n    $p->set_regular_price( '' );\n    $p->save();\n  }\n}\n$s = get_option( 'aga_settings', array() );\n$s['mode'] = 'add';\n$s['hide_price'] = true;\nupdate_option( 'aga_settings', $s );\nwp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Angebotsanfrage', 'post_content' => '[angebotsanfrage]' ) );\n"
+      "code": "<?php require_once '/wordpress/wp-load.php';\nif ( class_exists( 'WC_Product_Simple' ) ) {\n  $names = array( 'Pro Workbench XL', 'Industrial Heavy-Duty Shelf 200 cm', 'Bulk Industrial Cleaner 25 L' );\n  foreach ( $names as $n ) {\n    $p = new WC_Product_Simple();\n    $p->set_name( $n );\n    $p->set_status( 'publish' );\n    $p->set_catalog_visibility( 'visible' );\n    $p->set_regular_price( '' );\n    $p->save();\n  }\n}\n$page_id = wp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Request a Quote', 'post_content' => '[angebotsanfrage]' ) );\n$s = get_option( 'aga_settings', array() );\n$s['mode'] = 'add';\n$s['hide_price'] = true;\n$s['page_id'] = $page_id;\nupdate_option( 'aga_settings', $s );\n"
     }
   ]
 }
